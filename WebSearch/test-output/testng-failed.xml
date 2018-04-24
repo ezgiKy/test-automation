@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test Web Search(failed)">
+    <parameter name="URLIN" value="https://www.google.com"/>
+    <parameter name="DriverPathIN" value=".\\src\\main\\java\\com\\test\\util\\chromedriver.exe"/>
+    <parameter name="TestNameIN" value="WebSearch"/>
+    <parameter name="KeywordIN" value="Selenium Web Driver"/>
+    <parameter name="browserIN" value="CHROME"/>
+    <classes>
+      <class name="com.test.search.WebSearchTest">
+        <methods>
+          <include name="prepare"/>
+          <include name="openWebPage"/>
+          <include name="searchForKeyword"/>
+        </methods>
+      </class> <!-- com.test.search.WebSearchTest -->
+    </classes>
+  </test> <!-- Test Web Search(failed) -->
+</suite> <!-- Failed suite [Suite] -->

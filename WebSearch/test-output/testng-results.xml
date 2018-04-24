@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="11214" started-at="2018-04-17T13:38:21Z" finished-at="2018-04-17T13:38:32Z">
+    <groups>
+    </groups>
+    <test name="Test Web Search" duration-ms="11214" started-at="2018-04-17T13:38:21Z" finished-at="2018-04-17T13:38:32Z">
+      <class name="com.test.search.WebSearchTest">
+        <test-method status="PASS" signature="prepare(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.search.WebSearchTest@55f3ddb1]" name="prepare" is-config="true" duration-ms="3315" started-at="2018-04-17T16:38:21Z" finished-at="2018-04-17T16:38:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.google.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Selenium Web Driver]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[WebSearch]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[.\\src\\main\\java\\com\\test\\util\\chromedriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepare -->
+        <test-method status="PASS" signature="openWebPage()[pri:0, instance:com.test.search.WebSearchTest@55f3ddb1]" name="openWebPage" duration-ms="2157" started-at="2018-04-17T16:38:24Z" finished-at="2018-04-17T16:38:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openWebPage -->
+        <test-method status="PASS" signature="searchForKeyword()[pri:1, instance:com.test.search.WebSearchTest@55f3ddb1]" name="searchForKeyword" duration-ms="1812" started-at="2018-04-17T16:38:27Z" depends-on-methods="com.test.search.WebSearchTest.openWebPage" finished-at="2018-04-17T16:38:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchForKeyword -->
+        <test-method status="PASS" signature="takeScreenShotForResult()[pri:2, instance:com.test.search.WebSearchTest@55f3ddb1]" name="takeScreenShotForResult" duration-ms="318" started-at="2018-04-17T16:38:28Z" depends-on-methods="com.test.search.WebSearchTest.searchForKeyword" finished-at="2018-04-17T16:38:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotForResult -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.test.search.WebSearchTest@55f3ddb1]" name="cleanUp" is-config="true" duration-ms="3590" started-at="2018-04-17T16:38:29Z" finished-at="2018-04-17T16:38:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- com.test.search.WebSearchTest -->
+    </test> <!-- Test Web Search -->
+  </suite> <!-- Suite -->
+</testng-results>
