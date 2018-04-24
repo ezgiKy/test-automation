@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="none">
+	<!--suite name="Test-class Suite" parallel="methods" thread-count="1" -->
+
+	<test name="Test Web Search">
+	
+		<parameter name="browserIN" value="CHROME" />
+		<!-- 	CHROME, FIREFOX, IEXPLORER, PHANTOM  -->
+		<parameter name="URLIN" value="https://www.google.com" />
+		<!-- 	web site will be opened by test automation -->
+		<parameter name="KeywordIN" value="Selenium Web Driver" />
+		<!-- 	keyword for searching on website  -->
+		<parameter name="TestNameIN" value="WebSearch" />
+		<!-- 	test name will be seen in test report  -->
+		<parameter name="DriverPathIN" value=".\\src\\main\\java\\com\\test\\util\\chromedriver.exe" />
+		<!-- 	driver path for chrome browser   -->
+		
+		<classes>
+			<class name="com.test.search.WebSearchTest" />
+			<!-- 	test automation class for execution  -->
+		</classes>
+		
+	</test>
+
+</suite>
